@@ -10,9 +10,11 @@ class Pos{
   public String toString(){    
       return "["+this.row+","+this.col+"]";
   }
+  
   @Override
-  public boolean equals(Object other){
-      if(other instanceof Pos){
+  public boolean equals(Object o){
+      if(o instanceof Pos){
+          Pos other = (Pos)o;
           if(other.row==this.row && other.col == this.col){
               return true;
           }
