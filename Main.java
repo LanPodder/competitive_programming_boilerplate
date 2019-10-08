@@ -6,4 +6,8 @@ class Pos{
     this.row=mrow;
     this.col=mcol;
   }
+  
+  public String toString(){    
+      return "["+this.row+","+this.col+"]";
+  }
 }
