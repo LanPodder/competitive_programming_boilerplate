@@ -21,4 +21,10 @@ class Pos{
       }
       return false;
   }
+  
+  public int distance(Pos other){
+    int x1=this.row-other.row;
+    int x2=this.col-other.col;
+    return (int)Math.sqrt(x1*x1+x2*x2);
+  }
 }
